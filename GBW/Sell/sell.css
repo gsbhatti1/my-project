@@ -1,0 +1,126 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: whitesmoke;
+    color: black;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set height to the full viewport height */
+    display: flex; /* Use Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Container styling */
+.container {
+    max-width: 700px;
+    width: 100%; /* Ensure container takes 100% width up to the max-width */
+    background-color: whitesmoke;
+    padding: 40px;
+    box-shadow: 0 4px 8px burlywood;
+    border-radius: 20px;
+    text-align: center; /* Center text and content inside the container */
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Form styling */
+.valuation-form {
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.form-group select {
+    height: 40px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+}
+
+.checkbox input {
+    margin-right: 1px;
+}
+
+.checkbox label {
+    font-size: 10px;
+    color: black;
+}
+
+.submit-btn {
+    background-color: burlywood;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: burlywood;
+}
+
+/* Go Back Home Button Styling */
+.go-home {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.go-home img {
+    width: 30px; /* Set the size of the icon */
+    height: 30px;
+    transition: transform 0.3s ease; /* Add a hover effect */
+}
+
+.go-home img:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}

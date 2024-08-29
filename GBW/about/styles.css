@@ -1,0 +1,144 @@
+/* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling with Flashing Effect */
+body {
+    position: relative; /* Needed to position the pseudo-element */
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    overflow: hidden; /* Prevents scrollbars if the effect gets large */
+}
+
+
+/* Main Container */
+.main-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: 100%;
+    padding: 20px;
+    margin-top: 10%;
+}
+
+
+/* Left Section: Image and Skills stacked vertically */
+.left-section {
+    display: flex;
+    flex-direction: column; /* Stack the image and skills vertically */
+    align-items: center; /* Center the image and skills horizontally */
+    gap: 20px; /* Space between the image and the skills */
+    flex-basis: 10%; /* 25% width of the total container */
+}
+
+/* Bio Image Styling */
+.bio-image {
+    width: 100%;
+}
+
+.bio-image img {
+    width: 100%; /* Ensures the image fills its container */
+    max-width: 250px; /* Limits the maximum size of the image */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Skills Section with Transparent Background */
+.skills-section {
+    background: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+    border-radius: 10px;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.158);
+}
+
+
+.skills-title {
+    font-size: 24px;
+    color: orangered;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.skills-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Skill Item Styling */
+.skills-list li {
+    background: orangered;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 50px;
+    color: #12121280;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.skills-list li:hover {
+    transform: translateY(-5px);
+    background: whitesmoke;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Biography Section */
+.bio-section {
+    flex-basis: 50%; /* 50% width of the total container */
+}
+
+.bio-container {
+    flex-basis: 100%;
+}
+
+.bio-title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.bio-text {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .bio-section, .left-section {
+        flex-basis: 100%; /* Full width on smaller screens */
+    }
+
+    .bio-image img {
+        max-width: 100%; /* Adjust image size on smaller screens */
+    }
+}

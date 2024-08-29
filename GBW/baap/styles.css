@@ -1,0 +1,179 @@
+
+
+/* Global styling */
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    align-self: auto;
+    vertical-align: auto;
+}
+
+/* Main container for contact details, license, and social icons */
+.contact-info-section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* Allows faded logo to be positioned */
+    margin-top: 10%; /* Shifts the entire section down by 5% */
+}
+/* Logo Styling */
+.logo-container img {
+    width: 100px;
+    margin-bottom: 5%;
+}
+
+/* Contact Information Styling */
+.contact-info {
+    width: 40%; /* Adjust to match the size with the faded logo */
+    position: relative;
+    z-index: 1; /* Keep content above the faded logo */
+}
+
+.contact-info h1 {
+    font-size: 36px;
+    margin-bottom: 1%;
+}
+
+/* Contact details items */
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1px;
+    font-size: 16px;
+}
+
+/* Style for icons next to contact details */
+.info-item .icon {
+    font-size: 24px;
+    margin-right: 20px;
+    align-self: start;
+}
+
+/* Style for links in contact info (phone, email, address) */
+.contact-info a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: orangered;
+}
+
+/* License Information Styling */
+.license {
+    font-size: 16px;
+    margin-top: 20px;
+    color: black;
+}
+
+/* Social Media Icons Styling */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px; /* Space between the icons */
+}
+
+.social-icons img {
+    width: 30px; /* Larger icon size for better visibility */
+    height: 30px;
+    transition: transform 0.3s ease; /* Add a transition effect for hover */
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+/* Faded Logo Styling */
+.faded-logo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px; /* Ensure the faded logo height matches the container */
+    background-image: url('../gbimgs/bglogo2.png'); /* Replace with your logo path */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.1; /* Faded effect */
+    z-index: 5;
+}
+
+/* Booking Form Section */
+.booking-form-section {
+    width: 50%;
+}
+
+/* Form Styling */
+form label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Privacy note */
+.privacy-note {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 5px;
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.privacy-policy a:hover {
+    color: orangered; /* Color change on hover */
+}
+
+/* Submit Button Styling */
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Vertical Divider Styling */
+.vertical-divider {
+    width: 3px; /* Thickness of the line */
+    background-color: #ccc;
+    margin: 0 3%;
+    height: auto; /* Full height of the container */
+}
+
+/* Global link styling */
+a {
+    color: orangered;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orangered;
+    text-decoration: underline;
+}

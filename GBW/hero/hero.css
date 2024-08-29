@@ -1,0 +1,78 @@
+/* Base styles for the entire body */
+html, body {
+    font-family: Arial, sans-serif; /* Set default font for the page */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+    height: 100%; /* Ensure the body takes the full height of the viewport */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align content to the bottom of the page */
+    background-size: cover; /* Ensure the image covers the entire background */
+    position: relative; /* Make sure the pseudo-element works relative to the body */
+}
+
+/* Add transparency to the background image */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: none; /* Ensure they don't override the body background */
+    z-index: -1; /* Ensure it stays behind all content */
+}
+
+/* Section for the hero image and overlay text */
+.hero {
+    position: relative; /* Position relative for overlay */
+    height: auto; /* Let content determine the height */
+    color: white; /* Set text color to white */
+    display: flex;
+    align-items: flex-end; /* Align content to the bottom of the hero section */
+    justify-content: center;
+    text-align: center; /* Center text alignment */
+    padding: 20px; /* Padding inside the hero section */
+    margin-bottom: 20px; /* Optional: Add margin at the bottom if needed */
+}
+
+/* Overlay text container in the hero section */
+.hero-content {
+    max-width: 800px; /* Set maximum width for content */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px; /* Padding inside the content box */
+    border-radius: 10px; /* Rounded corners for the content box */
+}
+
+/* Styles for the title in the hero section */
+.hero-content h1 {
+    font-size: 26px; /* Set font size for the main heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Styles for the subtitle in the hero section */
+.hero-content p {
+    font-size: 20px; /* Set font size for the subtitle */
+    margin-bottom: 30px; /* Space below the subtitle */
+}
+
+/* Button styles in the hero section */
+/* Applies to the "FIND A HOME" and "SOLD PROPERTIES" buttons */
+.hero-content .buttons a {
+    padding: 5px 20px; /* Add padding inside the buttons */
+    background-color: white; /* Set background color to white */
+    color: black; /* Set text color to black */
+    text-decoration: none; /* Remove underline from button text */
+    font-size: 16px; /* Set font size for the buttons */
+    border-radius: 5px; /* Rounded corners for the buttons */
+    border: 2px solid transparent; /* Transparent border for smooth transition */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the "FIND A HOME" and "SOLD PROPERTIES" buttons */
+.hero-content .buttons a:hover {
+    background-color: transparent; /* Change background color to transparent on hover */
+    color: white; /* Change text color to white on hover */
+    border-color: white; /* Change border color to white on hover */
+}

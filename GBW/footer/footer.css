@@ -1,0 +1,182 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Set default font for the entire page */
+}
+
+/* Body background color */
+body {
+    background-color: none; /* Light grey background */
+}
+
+/* Footer Container Styles */
+.footer-container {
+    background-color: #fff; /* White background */
+    color: #333; /* Darker text color */
+    padding: 40px; /* Padding around the entire footer */
+    width: 100%; /* Ensure the footer takes full width */
+    margin-top: 30px;
+}
+
+/* Top Section of the Footer */
+.footer-top {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space out the sections evenly */
+    padding-bottom: 30px; /* Space below the top section */
+    border-bottom: 1px solid #ddd; /* Subtle divider between sections */
+}
+
+/* Footer Section Styles */
+.footer-section {
+    width: 30%; /* Each section takes 30% of the footer width */
+}
+
+.footer-section h3 {
+    font-size: 1rem; /* Font size for headings */
+    margin-bottom: 10px; /* Space below headings */
+    font-weight: bold; /* Make the headings bold */
+}
+
+.footer-section p {
+    font-size: 0.95rem; /* Standard font size */
+    margin-bottom: 5px; /* Small spacing below each paragraph */
+}
+
+/* Email Subscription Section (inside newsletter) */
+.email-section {
+    margin-top: 20px; /* Margin at the top of the email section */
+}
+
+/* Email Label */
+.email-section h3 {
+    font-size: 1.1rem; /* Slightly larger font for the email heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+/* Email Input Field */
+.email-input-container {
+    margin-bottom: 20px; /* Spacing below the input field */
+}
+
+.email-input-container input {
+    width: 100%; /* Full width input */
+    padding: 10px 0; /* Padding within the input */
+    font-size: 1rem; /* Standard font size */
+    border: none; /* Remove borders */
+    border-bottom: 2px solid #ccc; /* Bottom border only */
+    outline: none; /* Remove focus outline */
+    background: none; /* Transparent background */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.email-input-container input:focus {
+    border-bottom: 2px solid #333; /* Darker border on focus */
+}
+
+/* Horizontal Divider Line */
+.email-section hr {
+    border: none;
+    border-top: 1px solid #ccc; /* Subtle divider */
+    margin-bottom: 20px;
+}
+
+/* Privacy Policy Text and Checkbox */
+.privacy-note {
+    display: flex; /* Flexbox for layout */
+    align-items: flex-start; /* Align the checkbox and text */
+    font-size: 0.9rem; /* Slightly smaller text */
+    line-height: 1.6; /* Line spacing for readability */
+    color: #333; /* Darker text color */
+}
+
+/* Checkbox Style */
+.privacy-note input[type="checkbox"] {
+    margin-right: 15px; /* Space between checkbox and text */
+    margin-top: 3px; /* Align checkbox with the text */
+}
+
+/* Privacy Policy Link */
+.privacy-note a {
+    color: #000; /* Black text color */
+    text-decoration: underline; /* Underline to indicate it's a link */
+}
+
+/* Upper Bottom Section of the Footer */
+.footer-bottom {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space out items evenly */
+    align-items: flex-start; /* Align items vertically at the start */
+    padding-top: 30px; /* Space above the bottom section */
+}
+
+/* Company Details and Logo Section */
+.footer-details {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    max-width: 100px; /* Size the logo */
+    margin-right: 20px; /* Space between logo and text */
+}
+
+.company-details p {
+    font-size: 0.85rem; /* Smaller font for details */
+    margin-bottom: 5px; /* Space below paragraphs */
+    color: #666; /* Slightly lighter text color */
+}
+
+/* Lower Bottom Section of the Footer */
+.footer-bottom-lower {
+    display: flex;
+    justify-content: space-between; /* Align the left and right content */
+    align-items: center; /* Align items vertically in the center */
+    padding-top: 20px; /* Padding between upper and lower sections */
+    border-top: 1px solid #ddd; /* Divider between upper and lower bottom section */
+    margin-top: 30px;
+}
+
+/* Website Design Section on the Left */
+.footer-website-design {
+    flex: 1;
+    text-align: left; /* Align text to the left */
+}
+
+.footer-website-design p {
+    font-size: 0.85rem; /* Smaller text for the design credit */
+    color: #888; /* Light grey text */
+}
+
+/* Social Media Icons Section on the Right */
+.footer-social-icons {
+    flex: 1;
+    text-align: right; /* Align the icons to the right */
+}
+
+/* Social Media Icon Links */
+.social-icons {
+    display: flex; /* Display the icons in a row */
+    justify-content: flex-end;
+}
+
+.social-icons a {
+    text-decoration: none; /* Remove underline from links */
+    margin-right: 10px; /* Space between icons */
+}
+
+.social-icons a img {
+    width: 24px; /* Set icon size */
+    height: 24px;
+}
+
+.social-icons a img:last-child {
+    margin-right: 0; /* Remove margin for the last icon */
+}
+
+/* Change the color of all links to orange */
+a {
+    color: orangered; /* Set the link color to orange */
+    text-decoration: none; /* Optional: remove underline if needed */
+}

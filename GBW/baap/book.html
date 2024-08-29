@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Gurpreet Bhatti</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+    <!-- Contact Information Section -->
+    <section class="contact-info-section">
+        <div class="contact-info">
+            <h1>Gurpreet Bhatti</h1>
+
+            <!-- Main Contact Container -->
+            <div class="contact-container">
+                <!-- Contact Details -->
+                <div class="info-item">
+                    <span class="icon">📞</span>
+                    <a href="tel:+18016358462">(801) 635-8462</a>
+                </div>
+                <div class="info-item">
+                    <span class="icon">✉️</span>
+                    <a href="mailto:gsbhatti1@yahoo.com">GSBHATTI1@YAHOO.COM</a>
+                </div>
+                <div class="info-item">
+                    <span class="icon">📍</span>
+                    <a href="https://maps.app.goo.gl/pypdvRdm5f8er97p8" target="_blank">
+                        2629 W. 7800 S., SUITE B<br>West Jordan, UT 84084
+                    </a>
+                </div>
+
+                <!-- License Information -->
+                <div class="license-info">
+                    <p class="license">UT: 12907042-SAOO<br>NV: S.0201351<br>WY: RE-17041</p>
+                </div>
+
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                    <a href="#"><img src="../gbimgs/facebook.png" alt="Facebook" class="social-icon"></a>
+                    <a href="#"><img src="../gbimgs/instagram.png" alt="Instagram" class="social-icon"></a>
+                    <a href="#"><img src="../gbimgs/youtube.png" alt="YouTube" class="social-icon"></a>
+                    <a href="#"><img src="../gbimgs/tiktok.png" alt="TikTok" class="social-icon"></a>
+                    <a href="#"><img src="../gbimgs/linkedin.png" alt="LinkedIn" class="social-icon"></a>
+                </div>
+            </div>
+
+            <!-- Faded logo as a background -->
+            <div class="faded-logo"></div>
+        </div>
+
+        <!-- Vertical Divider -->
+        <div class="vertical-divider"></div>
+
+        <!-- Booking Form Section -->
+        <div class="booking-form-section">
+            <h1>Book an Appointment</h1>
+            <form id="appointmentForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+               <!-- Privacy Note -->
+               <div class="privacy-note">
+                <input type="checkbox" id="privacy-check" required>
+                <label for="privacy-check">
+                    By providing Gurpreet Bhatti your contact information, you acknowledge and agree to our 
+                    <a href="#">Privacy Policy</a> and consent to receiving marketing communications, including through automated calls, texts, and emails, some of which may use artificial or prerecorded voices. 
+                    This consent isn’t necessary for purchasing any products or services, and you may opt out at any time. To opt out from texts, you can reply, ‘stop’ at any time. To opt out from emails, you can click on the unsubscribe link in the emails. Message and data rates may apply.
+                </label>
+            </div>
+    
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    </section>
+
+    <!-- Include the EmailJS SDK -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- External JavaScript -->
+    <script src="appointment.js"></script>
+</body>
+</html>

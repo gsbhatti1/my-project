@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Valuation</title>
+    <link rel="stylesheet" href="sell.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>How Much is My Home Worth?</h1>
+            <p>Fill out the form below to schedule an in-person appointment with Gurpreet Bhatti and receive a custom-tailored pricing proposal.</p>
+        </header>
+
+        <form id="valuationForm" class="valuation-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="timeline">Timeline *</label>
+                    <select id="timeline" name="timeline" required>
+                        <option value="now">Now</option>
+                        <option value="3 months">3 months</option>
+                        <option value="6 months">6 months</option>
+                        <option value="just curious">Just Curious</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group checkbox">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">By providing your contact information, you acknowledge and agree to our Privacy Policy and consent to receiving marketing communications, including automated calls, texts, and emails. You may opt out at any time.</label>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+    
+    <div class="go-home">
+        <a href="../main/index.html"><img src="../gbimgs/home.png" alt="Go Home"></a>
+</div>
+
+    <script src="sell.js"></script>
+</body>
+</html>

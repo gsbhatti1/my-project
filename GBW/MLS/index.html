@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utah Real Estate Listings</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header with navigation and search -->
+    <header class="header-section">
+        <div class="header-left">
+            <div class="logo">
+                <a href="../main-page/main-page.html">
+                    <img src="../gbimgs/bglogo2.png" alt="Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" id="aboutBtn">About</a></li>
+                    <li><a href="#" id="searchhomes">Search Homes</a></li>
+                    <li><a href="#" id="sell">Sell</a></li>
+                    <li><a href="#" id="contact">Contact</a></li>
+                    <li><a href="#">(801) 495-0205</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <ul>
+                <li><a href="#"><span class="icon">&#9829;Saved</span></li>
+                <li class="dropdown">
+                    <a href="#"><span class="icon">&#128100;Profile</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Search Filters -->
+    <div class="filters">
+        <div class="filters-left">
+            <input type="text" placeholder="Address, city, neighborhood..." />
+            <button>For sale</button>
+            <button>Any price</button>
+            <button>All home types</button>
+            <button>All beds</button>
+            <button>All baths</button>
+        </div>
+        <div class="filters-right">
+            <button id="filterBtn">All filters</button>
+            <button id="saveSearchBtn" class="save-search">Save search</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <!-- Left Section (Listings, Pagination, Locations, Footer) -->
+        <div class="left-section">
+            <div id="dynamicContent"></div> <!-- Dynamic content goes here -->
+            <!-- Listings -->
+            <div class="listings" id="listingsContainer">
+                <!-- Listing cards will be dynamically injected here -->
+            </div>
+    
+            <!-- Pagination -->
+            <div class="pagination">
+                <span id="prevPage">Previous</span>
+                <span id="nextPage">Next</span>
+            </div>
+    
+            <!-- Locations Section -->
+            <div class="locations">
+                <h3>Locations near Utah</h3>
+            
+                <div class="tab-buttons">
+                    <button id="cityTab" class="active-tab">Cities</button>
+                    <button id="zipTab">Zip codes</button>
+                    <button id="countyTab">Counties</button>
+                </div>
+            
+                <!-- Cities List -->
+                <div id="citiesContainer" class="locations-list">
+                    <div class="location-links grid" id="citiesList">
+                        <!-- List of cities -->
+                        <a href="#">Salt Lake City Homes for Sale</a>
+                        <a href="#">Provo Homes for Sale</a>
+                        <a href="#">Park City Homes for Sale</a>
+                        <a href="#">Ogden Homes for Sale</a>
+                        <a href="#">St. George Homes for Sale</a>
+                        <a href="#">Logan Homes for Sale</a>
+                        <a href="#">Lehi Homes for Sale</a>
+                        <a href="#">Layton Homes for Sale</a>
+                        <a href="#">Draper Homes for Sale</a>
+                        <a href="#">Sandy Homes for Sale</a>
+                    </div>
+                    <button id="cityToggle">Show more ▼</button>
+                </div>
+            
+                <!-- Zip Codes List -->
+                <div id="zipCodesContainer" class="locations-list" style="display: none;">
+                    <div class="location-links grid" id="zipCodesList">
+                        <!-- List of zip codes -->
+                        <a href="#">84101 Homes for Sale</a>
+                        <a href="#">84102 Homes for Sale</a>
+                        <a href="#">84103 Homes for Sale</a>
+                        <a href="#">84104 Homes for Sale</a>
+                        <a href="#">84105 Homes for Sale</a>
+                        <a href="#">84106 Homes for Sale</a>
+                        <a href="#">84107 Homes for Sale</a>
+                        <a href="#">84108 Homes for Sale</a>
+                        <a href="#">84109 Homes for Sale</a>
+                        <a href="#">84110 Homes for Sale</a>
+                    </div>
+                    <button id="zipToggle">Show more ▼</button>
+                </div>
+            
+                <!-- Counties List -->
+                <div id="countiesContainer" class="locations-list" style="display: none;">
+                    <div class="location-links grid" id="countiesList">
+                        <!-- List of counties -->
+                        <a href="#">Salt Lake County Homes for Sale</a>
+                        <a href="#">Utah County Homes for Sale</a>
+                        <a href="#">Davis County Homes for Sale</a>
+                        <a href="#">Weber County Homes for Sale</a>
+                        <a href="#">Washington County Homes for Sale</a>
+                        <a href="#">Cache County Homes for Sale</a>
+                        <a href="#">Tooele County Homes for Sale</a>
+                        <a href="#">Summit County Homes for Sale</a>
+                        <a href="#">Wasatch County Homes for Sale</a>
+                        <a href="#">Uintah County Homes for Sale</a>
+                    </div>
+                    <button id="countyToggle">Show more ▼</button>
+                </div>
+            </div>
+            
+            
+    
+            <!-- Footer -->
+            <footer>
+                <div class="legal">
+                    <p>Based on information from the Utah Multiple Listing Service (MLS). Data last updated 8/23/2024. IDX information is provided exclusively for consumers' personal, non-commercial use. It may not be used for any purpose other than to identify prospective properties that consumers may be interested in purchasing. All information is deemed reliable but not guaranteed and should be independently reviewed and verified. Property locations displayed on any map are approximate and should be independently verified. All properties are subject to prior sale, change, or withdrawal and may or may not be listed by the office or agent presenting the information. Neither listing broker(s) nor Gurpreet Bhatti | UT DRE #XXXXXXX shall be held responsible for any typographical errors, misinformation, misprints, and are held harmless.<br><br>
+                        
+                        ©2024 Utah MLS. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+    
+        <!-- Right Section (Map) -->
+        <div class="right-section">
+            <div id="map"></div>
+        </div>
+    </div>
+
+    <!-- Link to Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+</body>    
+    <!-- Link to the external JavaScript file -->
+    <script src="scripts.js"></script>
+
+</html>
